@@ -8,6 +8,10 @@ get_header();
         <video class="banner__video" autoplay muted loop poster="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>">
             <source src="<?php echo get_stylesheet_directory_uri() . '/assets/video/video-koukaki.mp4'; ?>" type="video/mp4">
         </video>
+        <div class="banner_parallaxe">
+        <img class="banner_logo" src="<?php echo get_theme_file_uri().'/assets/images/logo.png'; ?>"
+        alt="Logo Fleurs d'oranger & chats errants">
+        </div>
         </section>
         <section id="#story" class="story">
             <h2>L'histoire</h2>
