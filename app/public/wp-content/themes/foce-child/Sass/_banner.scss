@@ -1,13 +1,12 @@
-.banner{
+.banner {
     position: relative;
     object-fit: contain;
     height: 800px;
     background-image: none !important;
     min-height: 600px;
-    background-size: cover;
     display:inline-table !important;
     justify-content: center;
-    align-items: center;
+    align-items: unset;
 
 }
 
@@ -15,18 +14,18 @@
     align-items: center;
 }
 
-.banner_video{
-    z-index: 1;
+.banner_video {
+    z-index: -1;
     opacity: 1;
     margin-left:20%;
 }
 
 
-.banner_logo{
-    position: sticky;S
+.banner_logo {
+    position: absolute;
     top: 50px;
-    opacity: 1;
-    z-index: 2;
-    margin-top: 20%;
+    opacity: 2;
+    z-index: 8;
+    margin-top: 30%;
 
 }

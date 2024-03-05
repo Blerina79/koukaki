@@ -13,8 +13,8 @@ get_header();
         alt="Logo Fleurs d'oranger & chats errants">
         </div>
         </section>
-        <section id="#story" class="story">
-            <h2>L'histoire</h2>
+        <section id="#story" class="story-fade-in">
+            <h2> <span class="story-fade-in-title"></span>L'histoire</h2>
             <article id="" class="story__article">
                 <p><?php echo get_theme_mod('story'); ?></p>
             </article>
