@@ -1,0 +1,17 @@
+.story h2::after {
+    content: url(./assets/images/Sunflower.png);
+    position: absolute;
+    left: 0.7em;
+    top: 6em;
+    animation: spin 1s linear infinite;
+ }
+
+ @keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+  

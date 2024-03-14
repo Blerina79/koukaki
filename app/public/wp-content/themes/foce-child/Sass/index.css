@@ -78,12 +78,35 @@
   font-size: calc(0.5rem + 1.5vw);
 }
 
-.nav-menu li {
+.main-navigation li ul a {
   position: fixed;
   width: 100vw;
   min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.73, 0.67, 0.84);
+  transition: -webkit-transform 0.3s cubic-bezier(0.73, 0.67, 0.84);
+  transition: transform 0.3s cubic-bezier(0.73, 0.67, 0.84);
+  transition: transform 0.3s cubic-bezier(0.73, 0.67, 0.84), -webkit-transform 0.3s cubic-bezier(0.73, 0.67, 0.84);
 }
 
+/*.nav-menu li {
+ position: fixed;
+ width: 100vw;
+ min-height: 50vh;
+
+ }*/
 .nav-toggle {
   position: fixed;
   z-index: 10;
@@ -165,6 +188,59 @@ h1 span {
           justify-content: center;
 }
 
+h3 {
+  -webkit-transition: 10s ease-out;
+  transition: 10s ease-out;
+}
+
+h3:hover {
+  scale: 2;
+}
+
+.story #characters h3 {
+  -webkit-transition: 10s ease-out;
+  transition: 10s ease-out;
+}
+
+.personnages {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.story h2::after {
+  content: url(./assets/images/Sunflower.png);
+  position: absolute;
+  left: 0.7em;
+  top: 6em;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .story #characters {
   margin: 5em;
   display: -webkit-box;

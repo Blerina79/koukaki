@@ -9,14 +9,28 @@
     max-width: 900px;
     font-size: calc(0.5rem + 1.5vw);
 
+
      }
 
-    .nav-menu li {
+     .main-navigation li ul a {
+       position: fixed;
+       width: 100vw;
+       min-height: 50vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       transition: transform 0.3s cubic-bezier(0.73,0.67,0.84);
+      }
+
+
+
+    /*.nav-menu li {
      position: fixed;
      width: 100vw;
      min-height: 50vh;
 
-     }
+     }*/
 
      .nav-toggle{
         position:fixed;

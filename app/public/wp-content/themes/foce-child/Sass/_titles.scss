@@ -19,7 +19,23 @@ h1 {
 
  }
 
+ h3 {
+    transition: 10s ease-out;
+ }
  
+ h3:hover {
+   scale: 2;
+ }
+
+ .story #characters h3 {
+    transition: 10s ease-out;
+ }
+ 
+
+ .personnages {
+    align-items: center;
+    justify-content: center;
+ }
  
 
  

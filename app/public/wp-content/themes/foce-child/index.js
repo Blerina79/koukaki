@@ -6,5 +6,6 @@ hamburgerButton.addEventListener("click", toggleNav)
 
 function toggleNav() {
     hamburgerButton.classList.toggle("active")
+    navigation.classList.toggle("active")
 }
 

@@ -16,7 +16,7 @@ get_header();
         </div>
         </section>
          <section id="#story" class="story" data-aos="fade-up" data-aos-duration="3000">
-        <h2 class="animTitle">L'histoire</h2>
+        <h2>L'histoire</h2>
         <article id="sunflower" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
         </article>
