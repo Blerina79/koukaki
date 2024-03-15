@@ -5,3 +5,35 @@ body, button, input, select, optgroup, textarea {
     line-height: 1.5;
     width: max-content !important;
 }
+
+.story #place {
+    display: flex;
+    background-image: url(./assets/images/place_bg.png);
+    width: 100%;
+    min-height: 699px;
+    background-size: cover;
+
+}
+
+
+
+
+
+#studio > div p {
+    width: 44.5%;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -188,6 +188,16 @@ h1 span {
           justify-content: center;
 }
 
+#studio h2 {
+  overflow: hidden;
+  background-image: url(./assets/images/purple_studio_bg.png);
+  -webkit-animation: reveal linear;
+          animation: reveal linear;
+  animation-timeline: view();
+  animation-range-start: cover 0%;
+  animation-range-end: contain 50%;
+}
+
 h3 {
   -webkit-transition: 10s ease-out;
   transition: 10s ease-out;
@@ -260,6 +270,44 @@ h3:hover {
             transform: rotate(360deg);
   }
 }
+#studio h2::before {
+  content: url(./assets/images/random_flower.png);
+  position: absolute;
+  left: -1em;
+  top: 0;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+#studio h2::after {
+  content: url(./assets/images/flower.png);
+  position: absolute;
+  right: 1em;
+  top: 1.2em;
+  -webkit-animation: spin 3s linear infinite;
+          animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .story #characters {
   margin: 5em;
   display: -webkit-box;
@@ -279,4 +327,49 @@ body, button, input, select, optgroup, textarea {
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
   width: max-content !important;
+}
+
+.story #place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url(./assets/images/place_bg.png);
+  width: 100%;
+  min-height: 699px;
+  background-size: cover;
+}
+
+#studio > div p {
+  width: 44.5%;
+  -webkit-animation: slide linear;
+          animation: slide linear;
+  animation-timeline: view();
+  animation-range-start: cover 0%;
+  animation-range-end: cover 30%;
+}
+
+@-webkit-keyframes slide {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=index.css.map */

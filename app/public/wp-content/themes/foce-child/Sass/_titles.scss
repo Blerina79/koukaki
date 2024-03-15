@@ -19,6 +19,17 @@ h1 {
 
  }
 
+ #studio h2 {
+   overflow: hidden;
+   background-image: url(./assets/images/purple_studio_bg.png);
+   animation:reveal linear;
+   animation-timeline: view();
+   animation-range-start: cover 0%;
+   animation-range-end:contain 50%;
+ }
+   
+
+
  h3 {
     transition: 10s ease-out;
  }
@@ -37,5 +48,7 @@ h1 {
     justify-content: center;
  }
  
+
+
 
  
