@@ -3,7 +3,7 @@
     position: absolute;
     left: 0.7em;
     top: 6em;
-    animation: spin 1s linear infinite;
+    animation: spin 2s linear infinite;
  }
 
  @keyframes spin {
@@ -15,3 +15,20 @@
     }
  }
   
+
+ .story__article::after {
+    content: url(./assets/images/Hibiscus.png);
+    position: absolute;
+    left: calc(50% + 414px);
+    top: 2em;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
