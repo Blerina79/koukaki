@@ -56,6 +56,8 @@ get_header();
             </div>
         </article>
         <article id="place">
+            <img class="big-cloud" src="<?php echo get_theme_file_uri().'/assets/images/big_cloud.png';?>" alt="gros nuage">
+            <img class="little-cloud" src="<?php echo get_theme_file_uri().'/assets/images/little_cloud.png';?>" alt="petit nuage">
             <div>
                 <h3  class="lieu">Le Lieu</h3>
                 <p><?php echo get_theme_mod('place'); ?></p>
@@ -69,12 +71,12 @@ get_header();
             <p>Avec une créativité et une capacité d’innovation mondialement reconnues, une expertise éditoriale et commerciale à la pointe de son industrie, le Studio Koukaki se positionne comme un acteur incontournable dans un marché en forte croissance. Koukaki construit chaque année de véritables succès et capitalise sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats errants”.</p>
         </div>
     </section>
-    <section id=" nomination aux oscars">
+    <section id="oscars">
      <div class="personnages">
          <img src="<?php echo get_stylesheet_directory_uri() . './assets/images/oscars.png'; ?>" alt="Fleurs d'oranger & chats errants nominé aux oscars">
      </div>
  </section>
-    <script src="./index.js"></script>
+    <script src="\wp-content\themes\foce-child\index.js"></script>
     <script>
      AOS.init();
  </script>

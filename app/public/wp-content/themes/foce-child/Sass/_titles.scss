@@ -6,22 +6,30 @@
      display:inline-block;
 }
 
+.main-navigation h1{
+   margin-right: 30%;
+   padding-top: 20px;
+}
+
 
 h1 {
      font-size: 2em;
      margin: 0;
      text-align: center;
- }
+     top: 30px;
+    }
 
  h1 span {
+     display: flex;
      align-items: center;
      justify-content: center;
-
+     top: 30px;
+     margin-bottom: 10px;
+     
  }
 
  #studio h2 {
    overflow: hidden;
-   background-image: url(./assets/images/purple_studio_bg.png);
    animation:reveal linear;
    animation-timeline: view();
    animation-range-start: cover 0%;

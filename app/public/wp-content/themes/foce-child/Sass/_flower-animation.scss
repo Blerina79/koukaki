@@ -1,5 +1,5 @@
 .story h2::after {
-    content: url(./assets/images/Sunflower.png);
+    content: url(../assets/images/Sunflower.png);
     position: absolute;
     left: 0.7em;
     top: 6em;
@@ -17,7 +17,7 @@
   
 
  .story__article::after {
-    content: url(./assets/images/Hibiscus.png);
+    content: url(../assets/images/Hibiscus.png);
     position: absolute;
     left: calc(50% + 414px);
     top: 2em;
@@ -35,7 +35,7 @@
 
 
  #studio h2::before {
-    content: url(./assets/images/random_flower.png);
+    content: url(../assets/images/random_flower.png);
     position: absolute;
     left: -1em;
     top: 0;
@@ -53,7 +53,7 @@
 
 
  #studio h2::after {
-    content: url(./assets/images/flower.png);
+    content: url(../assets/images/flower.png);
     position: absolute;
     right: 1em;
     top: 1.2em;
@@ -69,3 +69,53 @@
     }
  }
 
+
+ .site-footer::before {
+    position: absolute;
+    left: 4em;
+    top: 0em;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+
+
+ .site-footer::after {
+    position: absolute;
+    right: -4em;
+    bottom: 7.8em;
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+
+
+ .site-footer ul::after {
+    position: absolute;
+    left: calc(50% - 323px);
+    bottom: -28.5em;
+    z-index: -1;
+    animation: spin 3.5s linear infinite;
+}
+
+
+#studio > div::before {
+    position: absolute;
+    left: calc(50% - 17.225px);
+    top: 40%;
+    
+}

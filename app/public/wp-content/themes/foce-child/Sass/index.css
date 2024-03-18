@@ -110,8 +110,8 @@
 .nav-toggle {
   position: fixed;
   z-index: 10;
-  top: 30px;
-  right: 50px;
+  top: 50px;
+  right: 500px;
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -129,16 +129,26 @@
           align-items: center;
 }
 
+.main-navigation .line {
+  height: 3px;
+  background-color: #000;
+  display: block;
+  margin: auto;
+  margin-block: 2px;
+  width: 35px;
+}
+
 .line {
   position: absolute;
   display: block;
   width: 100%;
   height: 2px;
   background: black;
-  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.3s ease-out;
-  transition: opacity 0.1s ease-out, -webkit-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
-  transition: transform 0.3s ease-out, opacity 0.1s ease-out, -webkit-transform 0.3s ease-out;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  opacity: 0.1s ease-out;
 }
 
 .l1 {
@@ -147,8 +157,8 @@
 }
 
 .l3 {
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
 }
 
 .nav-toggle.active .l1 {
@@ -173,24 +183,34 @@
   display: inline-block;
 }
 
+.main-navigation h1 {
+  margin-right: 30%;
+  padding-top: 20px;
+}
+
 h1 {
   font-size: 2em;
   margin: 0;
   text-align: center;
+  top: 30px;
 }
 
 h1 span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  top: 30px;
+  margin-bottom: 10px;
 }
 
 #studio h2 {
   overflow: hidden;
-  background-image: url(./assets/images/purple_studio_bg.png);
   -webkit-animation: reveal linear;
           animation: reveal linear;
   animation-timeline: view();
@@ -221,8 +241,66 @@ h3:hover {
           justify-content: center;
 }
 
+.story #place {
+  background-image: url(../assets/images/Studio_Koukaki-image_place.png);
+  position: relative;
+}
+
+#place .big-cloud {
+  position: absolute;
+  height: 115px;
+  right: 80px;
+  top: 50px;
+  -webkit-filter: blur(23px);
+          filter: blur(23px);
+  -webkit-animation: moveCloud 5s linear infinite;
+          animation: moveCloud 5s linear infinite;
+}
+
+@-webkit-keyframes moveCloud {
+  0% {
+    -webkit-transform: translate(170px);
+            transform: translate(170px);
+  }
+  100% {
+    -webkit-transform: translate(-290px);
+            transform: translate(-290px);
+  }
+}
+
+@keyframes moveCloud {
+  0% {
+    -webkit-transform: translate(170px);
+            transform: translate(170px);
+  }
+  100% {
+    -webkit-transform: translate(-290px);
+            transform: translate(-290px);
+  }
+}
+#place .little-cloud {
+  position: absolute;
+  height: 100px;
+  right: 320px;
+  top: 150px;
+  -webkit-filter: blur(23px);
+          filter: blur(23px);
+  -webkit-animation: moveCloud 5s ease-in-out infinite;
+          animation: moveCloud 5s ease-in-out infinite;
+}
+
+@keyframes moveCloud {
+  0% {
+    -webkit-transform: translate(170px);
+            transform: translate(170px);
+  }
+  100% {
+    -webkit-transform: translate(-180px);
+            transform: translate(-180px);
+  }
+}
 .story h2::after {
-  content: url(./assets/images/Sunflower.png);
+  content: url(../assets/images/Sunflower.png);
   position: absolute;
   left: 0.7em;
   top: 6em;
@@ -252,7 +330,7 @@ h3:hover {
   }
 }
 .story__article::after {
-  content: url(./assets/images/Hibiscus.png);
+  content: url(../assets/images/Hibiscus.png);
   position: absolute;
   left: calc(50% + 414px);
   top: 2em;
@@ -271,7 +349,7 @@ h3:hover {
   }
 }
 #studio h2::before {
-  content: url(./assets/images/random_flower.png);
+  content: url(../assets/images/random_flower.png);
   position: absolute;
   left: -1em;
   top: 0;
@@ -290,7 +368,7 @@ h3:hover {
   }
 }
 #studio h2::after {
-  content: url(./assets/images/flower.png);
+  content: url(../assets/images/flower.png);
   position: absolute;
   right: 1em;
   top: 1.2em;
@@ -308,6 +386,57 @@ h3:hover {
             transform: rotate(360deg);
   }
 }
+.site-footer::before {
+  position: absolute;
+  left: 4em;
+  top: 0em;
+  -webkit-animation: spin 5s linear infinite;
+          animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.site-footer::after {
+  position: absolute;
+  right: -4em;
+  bottom: 7.8em;
+  -webkit-animation: spin 2.5s linear infinite;
+          animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.site-footer ul::after {
+  position: absolute;
+  left: calc(50% - 323px);
+  bottom: -28.5em;
+  z-index: -1;
+  -webkit-animation: spin 3.5s linear infinite;
+          animation: spin 3.5s linear infinite;
+}
+
+#studio > div::before {
+  position: absolute;
+  left: calc(50% - 17.225px);
+  top: 40%;
+}
+
 .story #characters {
   margin: 5em;
   display: -webkit-box;
@@ -333,7 +462,7 @@ body, button, input, select, optgroup, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(./assets/images/place_bg.png);
+  background-image: url(../assets/images/Studio_Koukaki-image_place.png);
   width: 100%;
   min-height: 699px;
   background-size: cover;
@@ -372,4 +501,16 @@ body, button, input, select, optgroup, textarea {
             transform: translateY(0);
     opacity: 1;
   }
+}
+.personnages {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */

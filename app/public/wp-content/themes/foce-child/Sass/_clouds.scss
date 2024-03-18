@@ -1,5 +1,53 @@
-//.story #place {
-    //background-image: url(../assets/images/place_bg.png);
-    //position: relative;
-//}
+.story #place {
+    background-image: url(../assets/images/Studio_Koukaki-image_place.png);
+    position: relative;
+   
+}
+
+#place .big-cloud {
+    position: absolute;
+    height: 115px;
+    right: 80px;
+    top: 50px;
+    filter: blur(23px);
+    animation: moveCloud 5s linear infinite;
+  }
+
+  @keyframes moveCloud {
+    0%{
+        transform: translate(170px);
+    }
+    100%{
+        transform: translate(-290px);
+    }
+  }
+
+
+
+#place .little-cloud {
+    position: absolute;
+    height: 100px;
+    right: 320px;
+    top: 150px;
+    filter: blur(23px);
+    animation: moveCloud 5s ease-in-out infinite;
+}
+
+@keyframes moveCloud {
+    0%{
+        transform: translate(170px);
+    }
+    100%{
+        transform: translate(-180px);
+    }
+  }
+
+
+
+
+
+
+
+   
+
 

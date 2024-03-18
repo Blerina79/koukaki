@@ -5,6 +5,7 @@ function theme_enqueue_styles() {
     
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/sass/index.css');
 }
+wp_enqueue_script( 'script', get_template_directory_uri() .'/foce-child/index.js');
 
 
 
