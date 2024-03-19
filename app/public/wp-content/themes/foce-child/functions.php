@@ -7,6 +7,9 @@ function theme_enqueue_styles() {
 }
 wp_enqueue_script( 'script', get_template_directory_uri() .'/foce-child/index.js');
 
+// Chargement du fichier JavaScript de Swiper depuis le CDN
+wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js');
+
 
 
 // Get customizer options form parent theme
