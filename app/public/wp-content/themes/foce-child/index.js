@@ -27,5 +27,10 @@ const swiper = new Swiper(".mySwiper", {
         modifier: 1,
         slideShadows: false,
     },
+    loop:true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
     slidesOffsetBefore:500,
 });

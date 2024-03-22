@@ -15,7 +15,7 @@ get_header();
         alt="Logo Fleurs d'oranger & chats errants" data-aos="fade-up" data-aos-duration="3000">
         </div>
         </section>
-         <section id="#story" class="story" data-aos="fade-up" data-aos-duration="3000">
+         <section id="#story" class="story" data-aos="fade-in" data-aos-duration="3000">
         <h2>L'histoire</h2>
         <article id="sunflower" class="story__article">
             <p><?php echo get_theme_mod('story'); ?></p>
@@ -50,14 +50,14 @@ get_header();
             </div>
         </article>
     </section>
-    <section id="studio">
+    <section id="studio" data-aos="fade-in" data-aos-duration="3000">
         <h2 class="studio">Studio Koukaki</h2>
         <div>
             <p>Acteur majeur de l’animation, Koukaki est un studio intégré fondé en 2012 qui créé, produit et distribue des programmes originaux dans plus de 190 pays pour les enfants et les adultes. Nous avons deux sections en activité : le long métrage et le court métrage. Nous développons des films fantastiques, principalement autour de la culture de notre pays natal, le Japon.</p>
             <p>Avec une créativité et une capacité d’innovation mondialement reconnues, une expertise éditoriale et commerciale à la pointe de son industrie, le Studio Koukaki se positionne comme un acteur incontournable dans un marché en forte croissance. Koukaki construit chaque année de véritables succès et capitalise sur de puissantes marques historiques. Cette année, il vous présente “Fleurs d’oranger et chats errants”.</p>
         </div>
     </section>
-    <section id="oscars">
+    <section id="oscars" data-aos="fade-in" data-aos-duration="3000">
      <div class="personnages">
          <img src="<?php echo get_stylesheet_directory_uri() . './assets/images/oscars.png'; ?>" alt="Fleurs d'oranger & chats errants nominé aux oscars">
      </div>

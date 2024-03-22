@@ -1,16 +1,20 @@
 .main-navigation ul {
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     list-style: none;
     padding-left: 20px;
     margin-inline: auto;
-    max-width: 900px;
     font-size: calc(0.5rem + 1.5vw);
+    background-color: #FFF5E9 !important;
 
+}
 
-     }
+     .main-navigation a {
+        display: block;
+        text-decoration: none;
+    }
 
      .main-navigation li ul a {
        position: fixed;
@@ -21,6 +25,8 @@
        align-items: center;
        flex-direction: column;
        transition: transform 0.3s cubic-bezier(0.73,0.67,0.84);
+       background-color: #FFF5E9;
+
       }
 
 
@@ -32,7 +38,15 @@
 
      }*/
 
+     .menu-toggle, .main-navigation.toggled ul {
+        display: block;
+        background-color: #FFF5E9;
+
+    }
+
+
      .nav-toggle{
+    
         position:absolute;
         z-index: 10;
         top: 15px;
