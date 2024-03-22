@@ -38,15 +38,15 @@
 
 }*/
 
-.banner {
+/*.banner {
     position: relative;
     z-index: 1;
     height: 800px;
-  }
+  }*/
   
   
   
-  .banner_logo {
+  /*.banner_logo {
     position: relative;
     width: auto;
     top: 30px;
@@ -54,13 +54,32 @@
             animation: float 8s ease-in-out infinite;
     z-index: 7 !important;
   }
-  
+  */
 
 
 .banner img {
     position: absolute;
-    left: 23%;
-    top: 30%;
-    animation: float 8s ease-in-out infinite;
+    left: 25%;
+    top: 10%;
+    margin-top: 3%;
+    animation: floatBanner 2s ease-in-out infinite alternate;
     z-index: 7 !important;
 }  
+
+//effet de flottement du banner//
+
+@keyframes floatBanner {
+    
+        0%, 100% {
+          transform: translate3d(0, 0, 0);
+        }
+       
+        50% {
+          transform: translate3d(-12px, -13px, 0);
+        }
+
+        100%{
+            transform: translate3d(-15px, 10px, 0);
+        }
+       
+      }

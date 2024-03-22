@@ -30,30 +30,59 @@
     z-index: 7 !important;
 
 }*/
-.banner {
-  position: relative;
-  z-index: 1;
-  height: 800px;
-}
-
-.banner_logo {
+/*.banner {
+    position: relative;
+    z-index: 1;
+    height: 800px;
+  }*/
+/*.banner_logo {
   position: relative;
   width: auto;
   top: 30px;
   -webkit-animation: float 8s ease-in-out infinite;
-  animation: float 8s ease-in-out infinite;
-  z-index: 7 !important;
-}
-
-.banner img {
-  position: absolute;
-  left: 23%;
-  top: 30%;
-  -webkit-animation: float 8s ease-in-out infinite;
           animation: float 8s ease-in-out infinite;
   z-index: 7 !important;
 }
+*/
+.banner img {
+  position: absolute;
+  left: 25%;
+  top: 10%;
+  margin-top: 3%;
+  -webkit-animation: floatBanner 2s ease-in-out infinite alternate;
+          animation: floatBanner 2s ease-in-out infinite alternate;
+  z-index: 7 !important;
+}
 
+@-webkit-keyframes floatBanner {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-12px, -13px, 0);
+            transform: translate3d(-12px, -13px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-15px, 10px, 0);
+            transform: translate3d(-15px, 10px, 0);
+  }
+}
+
+@keyframes floatBanner {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-12px, -13px, 0);
+            transform: translate3d(-12px, -13px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-15px, 10px, 0);
+            transform: translate3d(-15px, 10px, 0);
+  }
+}
 .site-header {
   position: sticky;
   top: 0;
@@ -272,8 +301,8 @@ h3:hover {
             transform: translatex(0);
   }
   to {
-    -webkit-transform: translatex(-300px);
-            transform: translatex(-300px);
+    -webkit-transform: translatex(-550px);
+            transform: translatex(-550px);
   }
 }
 
@@ -283,8 +312,8 @@ h3:hover {
             transform: translatex(0);
   }
   to {
-    -webkit-transform: translatex(-300px);
-            transform: translatex(-300px);
+    -webkit-transform: translatex(-550px);
+            transform: translatex(-550px);
   }
 }
 #place .little-cloud {
@@ -304,8 +333,8 @@ h3:hover {
             transform: translatex(0);
   }
   to {
-    -webkit-transform: translatex(-300px);
-            transform: translatex(-300px);
+    -webkit-transform: translatex(-550px);
+            transform: translatex(-550px);
   }
 }
 .story h2::after {
