@@ -10,15 +10,15 @@
     right: 80px;
     top: 50px;
     filter: blur(23px);
-    animation: moveCloud 5s linear infinite;
+    animation: moveCloud 5s linear forwards;
   }
 
   @keyframes moveCloud {
-    0%{
-        transform: translate(170px);
+    from{
+        transform: translatex(0);
     }
-    100%{
-        transform: translate(-290px);
+    to{
+        transform: translatex(-300px);
     }
   }
 
@@ -30,15 +30,15 @@
     right: 320px;
     top: 150px;
     filter: blur(23px);
-    animation: moveCloud 5s ease-in-out infinite;
+    animation: moveCloud 5s linear forwards;
 }
 
 @keyframes moveCloud {
-    0%{
-        transform: translate(170px);
+    from{
+        transform: translatex(0);
     }
-    100%{
-        transform: translate(-180px);
+    to{
+        transform: translatex(-300px);
     }
   }
 

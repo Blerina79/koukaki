@@ -262,29 +262,29 @@ h3:hover {
   top: 50px;
   -webkit-filter: blur(23px);
           filter: blur(23px);
-  -webkit-animation: moveCloud 5s linear infinite;
-          animation: moveCloud 5s linear infinite;
+  -webkit-animation: moveCloud 5s linear forwards;
+          animation: moveCloud 5s linear forwards;
 }
 
 @-webkit-keyframes moveCloud {
-  0% {
-    -webkit-transform: translate(170px);
-            transform: translate(170px);
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
   }
-  100% {
-    -webkit-transform: translate(-290px);
-            transform: translate(-290px);
+  to {
+    -webkit-transform: translatex(-300px);
+            transform: translatex(-300px);
   }
 }
 
 @keyframes moveCloud {
-  0% {
-    -webkit-transform: translate(170px);
-            transform: translate(170px);
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
   }
-  100% {
-    -webkit-transform: translate(-290px);
-            transform: translate(-290px);
+  to {
+    -webkit-transform: translatex(-300px);
+            transform: translatex(-300px);
   }
 }
 #place .little-cloud {
@@ -294,18 +294,18 @@ h3:hover {
   top: 150px;
   -webkit-filter: blur(23px);
           filter: blur(23px);
-  -webkit-animation: moveCloud 5s ease-in-out infinite;
-          animation: moveCloud 5s ease-in-out infinite;
+  -webkit-animation: moveCloud 5s linear forwards;
+          animation: moveCloud 5s linear forwards;
 }
 
 @keyframes moveCloud {
-  0% {
-    -webkit-transform: translate(170px);
-            transform: translate(170px);
+  from {
+    -webkit-transform: translatex(0);
+            transform: translatex(0);
   }
-  100% {
-    -webkit-transform: translate(-180px);
-            transform: translate(-180px);
+  to {
+    -webkit-transform: translatex(-300px);
+            transform: translatex(-300px);
   }
 }
 .story h2::after {
